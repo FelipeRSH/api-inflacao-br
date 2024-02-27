@@ -1,0 +1,21 @@
+{
+  "name": "api-inflacao",
+  "version": "1.0.0",
+  "description": "API para recuperar dados da Inflacao",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "api"
+  ],
+  "author": "FelipeRSH",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.11"
+  }
+}
