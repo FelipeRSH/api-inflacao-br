@@ -13,7 +13,7 @@ async function scrapeIPCA() {
         const ipcaMesTexto = dadosIPCA.find('.ultimo small').text();
         const ipcaMes = parseFloat(dadosIPCA.find('.ultimo').text().match(/[\d,]+/)[0].replace(',', '.'));
         const ipcaAnterior = parseFloat(dadosIPCA.find('.anterior').text().match(/[\d,]+/)[0].replace(',', '.'));
- const ipca12Meses = parseFloat(dadosIPCA.find('.dozemeses').text().match(/[\d,]+/)[0].replace(',', '.'));
+ const ipca12Meses = parseFloat(dadosIPCA.find('.dozemeses').text().match(/\d+,\d{2}/)[0].replace(',', '.'));
         const ipcaAno = parseFloat(dadosIPCA.find('.ano').text().match(/[\d,]+/)[0].replace(',', '.'));
         const dataAtual = new Date();
 
